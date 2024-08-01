@@ -1,295 +1,356 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+} /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+} /* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+} /* Set core body defaults */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+} /* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+} /* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+} /* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c3e50;
-    padding: 10px 20px;
-    color: white;
+  background-color: #2c3e50;
 }
 
-header .logo img {
-    max-width: 100px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.header .logo img {
+  max-width: 100px;
 }
 
-nav ul li {
-    margin: 0 10px;
+.header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.header nav ul li {
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-icons {
+  display: flex;
+  gap: 20px;
 }
 
 .search-icon img,
 .menu-icon img {
-    max-width: 30px;
-    margin-left: 10px;
+  max-width: 30px;
+  margin-left: 10px;
 }
+
+/* /////////////// Hero */
 
 .hero {
-    text-align: center;
-    background-color: #e74c3c;
-    color: white;
-    padding: 50px 20px;
-    position: relative;
+  text-align: center;
+  background-color: #e74c3c;
+  color: white;
+  padding: 50px 20px;
+  position: relative;
 }
 
-.hero .corner-image img {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    max-width: 100px;
+.hero__corner-image img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 100px;
 }
 
 .hero button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .about-us {
-    background-color: #ecf0f1;
-    padding: 50px 20px;
+  background-color: #ecf0f1;
+  padding: 50px 20px;
 }
 
 .about-us-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-us-image img {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .about-us-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .about-us-text button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .work-gallery {
-    background-color: white;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: white;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .work-gallery .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work-gallery .gallery-item {
-    margin: 10px;
-    max-width: 200px;
-    text-align: center;
+  margin: 10px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .carousel-controls button {
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .carousel-controls .dots {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
 }
 
 .carousel-controls .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .carousel-controls .dot.active {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 .study-graphic-design {
-    background-color: #2ecc71;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    position: relative;
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
 }
 
 .study-graphic-design .top-border img,
 .study-graphic-design .bottom-border img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .study-graphic-design button {
-    background-color: #e67e22;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .online-education {
-    background-color: #34495e;
-    color: white;
-    padding: 50px 20px;
+  background-color: #34495e;
+  color: white;
+  padding: 50px 20px;
 }
 
 .education-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .education-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .services {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .download-app {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .download-app button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .download-app button img {
-    max-width: 20px;
-    margin-right: 10px;
+  max-width: 20px;
+  margin-right: 10px;
 }
 
 .education-image img {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .watch-creativity {
-    background-color: #ecf0f1;
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #ecf0f1;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .creativity-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .creativity-content .video-placeholder img {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .creativity-text {
-    max-width: 600px;
+  max-width: 600px;
 }
 
 .creativity-text button {
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 50px 20px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 50px 20px;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .footer-section {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .footer-section h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-section ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .footer-section ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .social-icons img {
-    max-width: 30px;
-    margin-right: 10px;
+  max-width: 30px;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-    .about-us-content,
-    .education-content,
-    .creativity-content,
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
+  .header nav {
+    display: none;
+  }
 
-    .about-us-image img,
-    .education-image img,
-    .creativity-content .video-placeholder img {
-        margin-bottom: 20px;
-    }
+  .about-us-content,
+  .education-content,
+  .creativity-content,
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-image img,
+  .education-image img,
+  .creativity-content .video-placeholder img {
+    margin-bottom: 20px;
+  }
 }
