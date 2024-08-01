@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-icon img,
+.menu-icon img {
+    max-width: 30px;
+    margin-left: 10px;
+}
+
+.hero {
+    text-align: center;
+    background-color: #e74c3c;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.hero .corner-image img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 100px;
+}
+
+.hero button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.about-us {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us-image img {
+    max-width: 300px;
+}
+
+.about-us-text {
+    max-width: 600px;
+}
+
+.about-us-text button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.work-gallery {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.work-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-gallery .gallery-item {
+    margin: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.carousel-controls .dots {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.carousel-controls .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-controls .dot.active {
+    background-color: #717171;
+}
+
+.study-graphic-design {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.study-graphic-design .top-border img,
+.study-graphic-design .bottom-border img {
+    max-width: 100%;
+}
+
+.study-graphic-design button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.online-education {
+    background-color: #34495e;
+    color: white;
+    padding: 50px 20px;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-text {
+    max-width: 600px;
+}
+
+.services {
+    margin-top: 20px;
+}
+
+.download-app {
+    margin-top: 20px;
+}
+
+.download-app button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.download-app button img {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.education-image img {
+    max-width: 300px;
+}
+
+.watch-creativity {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.creativity-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creativity-content .video-placeholder img {
+    max-width: 300px;
+}
+
+.creativity-text {
+    max-width: 600px;
+}
+
+.creativity-text button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-us-content,
+    .education-content,
+    .creativity-content,
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-image img,
+    .education-image img,
+    .creativity-content .video-placeholder img {
+        margin-bottom: 20px;
+    }
+}
